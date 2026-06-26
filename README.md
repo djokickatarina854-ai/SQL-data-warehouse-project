@@ -37,4 +37,4 @@ This project is licensed under the MIT License. You are free to use, modify, and
 ## About Me
 Hi there! I am Katarina and I have been working in accounting for over five years. I have been learning data analytics tool for a year now and I am so happy to work and share my projects in SQL! Contact me on LinkedIn or email, I am open for analytical roles!
 
-[![GitHub Profile](https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github)](https://www.linkedin.com/in/katarina-dokic-5b6661207/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/katarina-dokic-5b6661207/)
