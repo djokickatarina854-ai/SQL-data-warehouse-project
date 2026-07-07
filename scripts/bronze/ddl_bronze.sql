@@ -12,6 +12,8 @@ Script Purpose:
 USE DataWarehouse
 GO
 -- Create tables and rows
+===============================================================================
+-- Create CRM tables and rows
 
 IF OBJECT_ID ('bronze.crm_cust_info', 'U') IS NOT NULL
 	DROP TABLE bronze.crm_cust_info;
@@ -26,6 +28,8 @@ CREATE TABLE bronze.crm_cust_info (
 );
 GO
 
+-------------------------------------------------------------------------------	
+
 IF OBJECT_ID ('bronze.crm_prd_info', 'U') IS NOT NULL
 	DROP TABLE bronze.crm_prd_info;
 CREATE TABLE bronze.crm_prd_info (
@@ -39,6 +43,8 @@ CREATE TABLE bronze.crm_prd_info (
 );
 GO
 
+-------------------------------------------------------------------------------
+	
 IF OBJECT_ID ('bronze.crm_sales_details', 'U') IS NOT NULL
 	DROP TABLE bronze.crm_sales_details;
 CREATE TABLE bronze.crm_sales_details (
@@ -53,6 +59,9 @@ CREATE TABLE bronze.crm_sales_details (
 	sls_price INT
 );
 
+===============================================================================
+-- Create ERP tables and rows
+
 IF OBJECT_ID('bronze.erp_cust_az12', 'U') IS NOT NULL
     DROP TABLE bronze.erp_cust_az12;
 GO
@@ -64,6 +73,8 @@ CREATE TABLE bronze.erp_cust_az12 (
 );
 GO
 
+-------------------------------------------------------------------------------
+
 IF OBJECT_ID('bronze.erp_px_cat_g1v2', 'U') IS NOT NULL
     DROP TABLE bronze.erp_px_cat_g1v2;
 GO
@@ -73,5 +84,18 @@ CREATE TABLE bronze.erp_px_cat_g1v2 (
     cat          NVARCHAR(50),
     subcat       NVARCHAR(50),
     maintenance  NVARCHAR(50)
+);
+GO
+
+-------------------------------------------------------------------------------
+
+IF OBJECT_ID('silver.erp_LOC_A101', 'U') IS NOT NULL
+    DROP TABLE silver.erp_LOC_A101;
+GO
+
+CREATE TABLE silver.erp_LOC_A101 (
+    cid    NVARCHAR(50),
+    cntry  NVARCHAR(50),
+	dwh_create_date DATETIME2 DEFAULT GETDATE()
 );
 GO
