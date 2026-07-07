@@ -12,7 +12,7 @@ Script Purpose:
 USE DataWarehouse
 GO
 -- Create tables and rows
-===============================================================================
+-------------------------------------------------------------------------------	
 -- Create CRM tables and rows
 
 IF OBJECT_ID ('bronze.crm_cust_info', 'U') IS NOT NULL
@@ -59,7 +59,7 @@ CREATE TABLE bronze.crm_sales_details (
 	sls_price INT
 );
 
-===============================================================================
+-------------------------------------------------------------------------------	
 -- Create ERP tables and rows
 
 IF OBJECT_ID('bronze.erp_CUST_AZ12', 'U') IS NOT NULL
