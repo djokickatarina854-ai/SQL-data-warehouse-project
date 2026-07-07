@@ -62,11 +62,11 @@ CREATE TABLE bronze.crm_sales_details (
 ===============================================================================
 -- Create ERP tables and rows
 
-IF OBJECT_ID('bronze.erp_cust_az12', 'U') IS NOT NULL
-    DROP TABLE bronze.erp_cust_az12;
+IF OBJECT_ID('bronze.erp_CUST_AZ12', 'U') IS NOT NULL
+    DROP TABLE bronze.erp_CUST_AZ12;
 GO
 
-CREATE TABLE bronze.erp_cust_az12 (
+CREATE TABLE bronze.erp_CUST_AZ12 (
     cid    NVARCHAR(50),
     bdate  DATE,
     gen    NVARCHAR(50)
@@ -75,11 +75,11 @@ GO
 
 -------------------------------------------------------------------------------
 
-IF OBJECT_ID('bronze.erp_px_cat_g1v2', 'U') IS NOT NULL
-    DROP TABLE bronze.erp_px_cat_g1v2;
+IF OBJECT_ID('bronze.erp_PX_CAT_G1V2', 'U') IS NOT NULL
+    DROP TABLE bronze.erp_PX_CAT_G1V2;
 GO
 
-CREATE TABLE bronze.erp_px_cat_g1v2 (
+CREATE TABLE bronze.erp_PX_CAT_G1V2 (
     id           NVARCHAR(50),
     cat          NVARCHAR(50),
     subcat       NVARCHAR(50),
